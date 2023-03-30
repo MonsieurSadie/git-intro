@@ -9,11 +9,23 @@ public class BranchScript : MonoBehaviour
     {
         Debug.Log("do smth in code");
         Debug.Log("other log");
+		Debug.Log("init finished");
     }
+	
+	void FixedUpdate()
+	{
+		transform.position += transform.forward * Time.fixedDeltaTime;
+	}
 
     // Update is called once per frame
     void Update()
     {
         // a comment to specify what is to do in update
+		Debug.Log("Update");
     }
+	
+	void OnDrawGizmos()
+	{
+		Gizmos.DrawWireSphere(transform.position, 10);
+	}
 }
