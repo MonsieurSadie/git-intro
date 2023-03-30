@@ -9,7 +9,7 @@ public class BranchScript : MonoBehaviour
     {
         Debug.Log("do smth in code");
         Debug.Log("other log");
-		Debug.Log("init finished");
+		// comment
     }
 	
 	void FixedUpdate()
@@ -21,7 +21,7 @@ public class BranchScript : MonoBehaviour
     void Update()
     {
         // a comment to specify what is to do in update
-		Debug.Log("Update");
+		Debug.Log("un log");
     }
 	
 	void OnDrawGizmos()
