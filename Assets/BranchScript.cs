@@ -10,13 +10,9 @@ public class BranchScript : MonoBehaviour
     	Debug.Log("start");
         Debug.Log("do smth in code");
         Debug.Log("other log");
-		// comment
+		Debug.Log("bjkbi");
     }
 
-    void Something()
-    {
-
-    }
 	
 	void FixedUpdate()
 	{
@@ -29,10 +25,15 @@ public class BranchScript : MonoBehaviour
     {
         // a comment to specify what is to do in update
 		Debug.Log("un log");
+		// trerte
     }
 	
 	void OnDrawGizmos()
 	{
 		Gizmos.DrawWireSphere(transform.position, 10);
+	}
+	
+	void OnTriggerEnter()
+	{
 	}
 }
