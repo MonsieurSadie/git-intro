@@ -7,14 +7,21 @@ public class BranchScript : MonoBehaviour
     // Start is called before the first aya  frame update
     void Start()
     {
+    	Debug.Log("start");
         Debug.Log("do smth in code");
         Debug.Log("other log");
 		// comment
+    }
+
+    void Something()
+    {
+
     }
 	
 	void FixedUpdate()
 	{
 		transform.position += transform.forward * Time.fixedDeltaTime;
+		tranform.Rotate(0,10,0);
 	}
 
     // Update is called once per frame
