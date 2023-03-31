@@ -26,6 +26,8 @@ public class BranchScript : MonoBehaviour
         // a comment to specify what is to do in update
 		Debug.Log("un log");
 		// trerte
+		float x = 10;
+		float b = x * 1.5f;
     }
 	
 	void OnDrawGizmos()
