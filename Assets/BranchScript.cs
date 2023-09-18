@@ -34,15 +34,22 @@ public class BranchScript : MonoBehaviour
 		MyThingy();
 		for(int i=0; i < 10; i++)
 		{
+			// compute speed
+			float speed = 2 * i * GetSpeedFactor();
+			if(i > x)
+			{
+				x = i;
+			}
 			// Things happening in loop();
 		}
 		
 		EndUpdate();
     }
 	
+	float GetSpeedFactor()
 	void MyThingy()
 	{
-		Debug.Log("Waiting for game design docs to implement feature");
+		return 1;
 	}
 	
 	void EndUpdate()
@@ -53,9 +60,5 @@ public class BranchScript : MonoBehaviour
 	void OnDrawGizmos()
 	{
 		Gizmos.DrawWireSphere(transform.position, 10);
-	}
-	
-	void OnTriggerEnter()
-	{
 	}
 }
