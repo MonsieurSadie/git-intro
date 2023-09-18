@@ -9,8 +9,6 @@ public class BranchScript : MonoBehaviour
     {
     	Debug.Log("start");
         Debug.Log("do smth in code");
-        Debug.Log("other log");
-		Debug.Log("bjkbi");
     }
 
 	
@@ -18,6 +16,11 @@ public class BranchScript : MonoBehaviour
 	{
 		transform.position += transform.forward * Time.fixedDeltaTime;
 		tranform.Rotate(0,10,0);
+	}
+	
+	void AddedAFuncPrev()
+	{
+		nada();
 	}
 
     // Update is called once per frame
@@ -28,6 +31,12 @@ public class BranchScript : MonoBehaviour
 		// trerte
 		float x = 10;
 		float b = x * 1.5f;
+		
+		MyThingy();
+		For(int i=0;i++)
+		{
+			Things happening in loop();
+		}
     }
 	
 	void OnDrawGizmos()
