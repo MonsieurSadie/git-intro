@@ -32,13 +32,20 @@ public class BranchScript : MonoBehaviour
 		float x = 10;
 		
 		MyThingy();
-		For(int i=0;i++)
+		for(int i=0; i < 10; i++)
 		{
-			Things happening in loop();
+			// Things happening in loop();
 		}
+		
+		EndUpdate();
     }
 	
-	void FuncA()
+	void MyThingy()
+	{
+		Debug.Log("Waiting for game design docs to implement feature");
+	}
+	
+	void EndUpdate()
 	{
 		//DoSomething();
 	}
