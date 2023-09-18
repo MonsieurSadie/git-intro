@@ -27,8 +27,12 @@ public class BranchScript : MonoBehaviour
 		Debug.Log("un log");
 		// trerte
 		float x = 10;
-		float b = x * 1.5f;
     }
+	
+	void FuncA()
+	{
+		//DoSomething();
+	}
 	
 	void OnDrawGizmos()
 	{
