@@ -30,12 +30,16 @@ public class BranchScript : MonoBehaviour
 		Debug.Log("un log");
 		// trerte
 		float x = 10;
+<<<<<<< HEAD
+		float b = x * 1.5f;
 		
 		MyThingy();
 		For(int i=0;i++)
 		{
 			Things happening in loop();
 		}
+=======
+>>>>>>> 4b5e834997494d94b5caa4f4e683553504e996bf
     }
 	
 	void FuncA()
