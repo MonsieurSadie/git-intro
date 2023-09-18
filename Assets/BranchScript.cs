@@ -32,11 +32,21 @@ public class BranchScript : MonoBehaviour
 		float x = 10;
 		
 		MyThingy();
-		For(int i=0;i++)
+		for(int i=0; i<10 ;i++)
 		{
-			Things happening in loop();
+			// compute speed
+			float speed = 2 * i * GetSpeedFactor();
+			if(i > x)
+			{
+				x = i;
+			}
 		}
     }
+	
+	float GetSpeedFactor()
+	{
+		return 1;
+	}
 	
 	void FuncA()
 	{
@@ -46,9 +56,5 @@ public class BranchScript : MonoBehaviour
 	void OnDrawGizmos()
 	{
 		Gizmos.DrawWireSphere(transform.position, 10);
-	}
-	
-	void OnTriggerEnter()
-	{
 	}
 }
